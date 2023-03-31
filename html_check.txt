@@ -1,0 +1,4 @@
+def has_html_link(s):
+    pattern = r'<a\s+(?:[^>]*?\s+)?href="([^"]*)"[^>]*>.*</a>'
+    return re.search(pattern, s) is not None
+    
